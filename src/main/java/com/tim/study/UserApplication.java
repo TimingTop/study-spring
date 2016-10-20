@@ -3,6 +3,7 @@ package com.tim.study;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @RestController
 @SpringBootApplication
+@RibbonClient(name="say-hello",configuration = SayHelloConfiguration.class)
 public class UserApplication {
 
     @Bean
