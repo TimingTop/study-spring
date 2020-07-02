@@ -1,0 +1,10 @@
+server:
+  port: 8085
+
+security:
+  oauth2:
+    # oauth2 client
+    client:
+      client-id: app1
+      client-secret: 123
+    resource:

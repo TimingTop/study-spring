@@ -4,6 +4,7 @@
     <modules>
         <module>apache-ShardingSphere</module>
       <module>Study-sql</module>
+        <module>spring-oauth</module>
     </modules>
 
   <parent>
