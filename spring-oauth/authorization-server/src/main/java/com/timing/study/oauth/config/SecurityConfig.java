@@ -25,4 +25,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         auth.inMemoryAuthentication()
                 .withUser("timing").password("1024").roles("USER");
     }
+
+    @Bean
+    public SafeBean createBean() {
+        return new SafeBean();
+    }
 }

@@ -1,0 +1,7 @@
+## security
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: admin
